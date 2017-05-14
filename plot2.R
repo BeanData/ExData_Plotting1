@@ -7,7 +7,5 @@ GlobalActivePower <- as.numeric(data_date$Global_active_power)
 datetime <- strptime(paste(data_date$Date, data_date$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
 
 png("plot2.png", width = 480, height = 480)
-plot(datetime, GlobalActivePower, 
-     type="l", xlab = " ",
-     ylab="Global Active power (kilowatts)")
+plot(datetime, GlobalActivePower, type="l", xlab = " ", ylab="Global Active power (kilowatts)")
 dev.off
